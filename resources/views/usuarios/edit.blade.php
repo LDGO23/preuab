@@ -1,8 +1,8 @@
-/*Indicamos que vamos a usar la plantilla de app.blade.php que se encuentra en la carpeta layouts */
+<!-- Indicamos que vamos a usar la plantilla de app.blade.php que se encuentra en la carpeta layouts -->
 @extends('layouts.app') 
-/*Indicamos que el titulo ca a ser Edit */
+<!-- Indicamos que el titulo ca a ser Edit -->
 @section('title','Edit')
-/*Indicamos que apartir de aqui la seccion de contienidos va a ser lo siguiene que se ponga hasta @endsection */
+<!-- Indicamos que apartir de aqui la seccion de contienidos va a ser lo siguiene que se ponga hasta endsection  -->
 @section('content')
 
 <form action="{{ route ('usuarios.update', $usuario->id  )}}" method="POST" role="form" enctype="multipart/form-data" class="bg-white w-1/3 p-4 border-gray-100 shadow-x1 rounded-lg">
@@ -12,11 +12,11 @@
     <h2 class="text-2x1 text-center py-4 mb-4 font-semibold">EDITAR USUARIO</h2>
 
     <h4>Nombre</h4>
-    <input class="my-2 w-full bg-gray-200 p-2 text-lg rounded placebolder-gray-900"
+    <input class="my-2 w-full bg-gray-200 p-2 text-lg rounded text-left placebolder-gray-900"
     placeholder="Nombre" name="name"  type="text" value="{{ $usuario->name}}" pattern="[a-zA-Z\s]+" title="Solo colocar texto" required>
 
     <h4>Apellido Paterno</h4>
-    <input class="my-2 w-full bg-gray-200 p-2 text-lg rounded placebolder-gray-900"
+    <input class="my-2 w-full bg-gray-200 p-2 text-lg rounded placebolder-gray-900 text-left"
     placeholder="Apellido Paterno" name="lastname"  type="text" value="{{ $usuario->lastname}}" pattern="[a-zA-Z\s]+" title="Solo colocar texto" required>
     <h4>Apellido Materno</h4>
     <input class="my-2 w-full bg-gray-200 p-2 text-lg rounded placebolder-gray-900"
