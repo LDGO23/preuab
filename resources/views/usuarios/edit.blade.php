@@ -1,7 +1,8 @@
-@extends('layouts.app')
-
+/*Indicamos que vamos a usar la plantilla de app.blade.php que se encuentra en la carpeta layouts */
+@extends('layouts.app') 
+/*Indicamos que el titulo ca a ser Edit */
 @section('title','Edit')
-
+/*Indicamos que apartir de aqui la seccion de contienidos va a ser lo siguiene que se ponga hasta @endsection */
 @section('content')
 
 <form action="{{ route ('usuarios.update', $usuario->id  )}}" method="POST" role="form" enctype="multipart/form-data" class="bg-white w-1/3 p-4 border-gray-100 shadow-x1 rounded-lg">

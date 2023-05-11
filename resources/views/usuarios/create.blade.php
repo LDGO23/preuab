@@ -8,28 +8,27 @@
     @csrf
 
     <h2 class="text-2x1 text-center py-4 mb-4 font-semibold">CREAR USUARIO</h2>
-
+    <h4>Nombre</h4>
     <input class="my-2 w-full bg-gray-200 p-2 text-lg rounded placebolder-gray-900"
-    placeholder="Nombre" name="name"  type="text" pattern="[a-zA-Z\s]+" title="Solo colocar texto" required>
-
-    
+    placeholder="" name="name"  type="text" pattern="[a-zA-Z\s]+" title="Solo colocar texto" required>
+    <h3>Apellido Paterno</h3>
     <input class="my-2 w-full bg-gray-200 p-2 text-lg rounded placebolder-gray-900"
-    placeholder="Apellido Paterno" name="lastname"  type="text" pattern="[a-zA-Z\s]+" title="Solo colocar texto" required>
-       
+    placeholder=" Paterno" name="lastname"  type="text" pattern="[a-zA-Z\s]+" title="Solo colocar texto" required>
+    <h4>Apellido Materno</h4>
     <input class="my-2 w-full bg-gray-200 p-2 text-lg rounded placebolder-gray-900"
-    placeholder="Apellido Materno" name="lastnamem"  type="text" pattern="[a-zA-Z\s]+" title="Solo colocar texto" required>
-    
+    placeholder=" Materno" name="lastnamem"  type="text" pattern="[a-zA-Z\s]+" title="Solo colocar texto" required>
+    <h4>Fehca de Nacimiento</h4>
     <input class="my-2 w-full bg-gray-200 p-2 text-lg rounded placebolder-gray-900"
-    placeholder="Fecha de Nacimiento" name="date"  type="date"  required>
-
+    placeholder="" name="date"  type="date"  required>
+    <h4>Correo Electrónico</h4>
     <input class="my-2 w-full bg-gray-200 p-2 text-lg rounded placebolder-gray-900"
-    placeholder="Correo Electronico" name="email"  type="email" required title="Introduzca una dirección de correo electrónico válida">
-
+    placeholder=" " name="email"  type="email" required title="Introduzca una dirección de correo electrónico válida">
+    <h4>Numero Telefonico</h4>
     <input class="my-2 w-full bg-gray-200 p-2 text-lg rounded placebolder-gray-900"
-    placeholder="Numero Telefonico" name="number"  type="text"  pattern="[0-9]+" title="Solo colocar números" required>
-    
+    placeholder=" " name="number"  type="text"  pattern="[0-9]+" title="Solo colocar números" required>
+    <h4>Estatus</h4>
     <select class="my-2 w-full bg-gray-200 p-2 text-lg rounded placebolder-gray-900"
-    placeholder="Eatatus" name="status" required>
+    placeholder="" name="status" required>
     <option value="" disabled selected>Activo / Inactivo</option>
     <option value="Activo">Activo</option>
     <option value="Inactivo">Inactivo</option>
