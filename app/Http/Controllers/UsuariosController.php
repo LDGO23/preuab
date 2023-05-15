@@ -24,13 +24,13 @@ class UsuariosController extends Controller
     {
         $usuario = new Usuario();
 
-            $usuario->name = $request->name;
-            $usuario->lastname = $request->lastname;
-            $usuario->lastnamem = $request->lastnamem;
-            $usuario->date = $request->date;
-            $usuario->email = $request->email;
-            $usuario->number = $request->number;
-            $usuario->status = $request->status;
+        $usuario->name      = $request->name;
+        $usuario->lastname  = $request->lastname;
+        $usuario->lastnamem = $request->lastnamem;
+        $usuario->date      = $request->date;
+        $usuario->email     = $request->email;
+        $usuario->number    = $request->number;
+        $usuario->status    = $request->status;
 
 
             // $usuario->name = $request->input('name');
@@ -52,9 +52,10 @@ class UsuariosController extends Controller
         return view('usuarios.edit', compact('usuario'));
     }
 
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        $usuario = Usuario::find($id);
+        dd($request->id);
+        $usuario = Usuario::find();
 
         $usuario->update($request->all());
 

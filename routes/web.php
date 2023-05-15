@@ -12,7 +12,7 @@ Route::get('/usuarios', [UsuariosController::class, 'index'])->name('usuarios.in
 
 Route::get('/usuarios/create', [UsuariosController::class, 'create'])->name('usuarios.create');
 
-Route::post('/usuarios/create', [UsuariosController::class, 'store'])->name('usuarios.store');
+Route::post('/usuarios/store', [UsuariosController::class, 'store'])->name('usuarios.store');
 
 Route::resource('usuarios',UsuariosController::class);
 Auth::routes();
