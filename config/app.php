@@ -28,6 +28,8 @@ return [
 
     'env' => env('APP_ENV', 'production'),
 
+
+    
     /*
     |--------------------------------------------------------------------------
     | Application Debug Mode
@@ -231,5 +233,6 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
+    
 
 ];
